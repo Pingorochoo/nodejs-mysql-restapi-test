@@ -7,7 +7,8 @@ export const getEmployees = async (req, res) => {
     } catch (error) {
         res.statusCode = 500
         return res.json({
-            message: 'Something goes wrong'
+            message: 'Something goes wrong on getEmployees',
+            url: req.path
         })
     }
 }
@@ -24,7 +25,8 @@ export const getEmployeeByID = async (req, res) => {
     } catch (error) {
         res.statusCode = 500
         return res.json({
-            message: 'Something goes wrong'
+            message: 'Something goes wrong on getEmployeeById',
+            url: req.path
         })
     }
 
@@ -40,7 +42,8 @@ export const creatEmployees = async (req, res) => {
     } catch (error) {
         res.statusCode = 500
         return res.json({
-            message: 'Something goes wrong'
+            message: 'Something goes wrong on createEmployee',
+            url: req.path
         })
     }
 
@@ -60,7 +63,8 @@ export const updateEmployees = async (req, res) => {
     } catch (error) {
         res.statusCode = 500
         return res.json({
-            message: 'Something goes wrong'
+            message: 'Something goes wrong on updateEmployee',
+            url: req.path
         })
     }
 
@@ -81,7 +85,8 @@ export const updatePatchEmployees = async (req, res) => {
     } catch (error) {
         res.statusCode = 500
         return res.json({
-            message: 'Something goes wrong'
+            message: 'Something goes wrong on updatePathEmployee',
+            url: req.path
         })
     }
 
@@ -100,7 +105,8 @@ export const deleteEmployees = async (req, res) => {
     } catch (error) {
         res.statusCode = 500
         return res.json({
-            message: 'Something goes wrong'
+            message: 'Something goes wrong on deleteEmployee',
+            url: req.path
         })
     }
 
